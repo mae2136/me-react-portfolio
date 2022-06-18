@@ -1,13 +1,17 @@
 import React from "react";
 
+const navTitles = ["ABOUT ME", "PORTFOLIO", "CONTACT", "RESUME"];
+
 function Header() {
     return (
-        <div>
+        <header>
             <h1>Miguel Escobar</h1>
             <nav>
-                <p>ABOUT ME</p>
+                {navTitles.map((title) => (
+                    <p>{title}</p>
+                ))}
             </nav>
-        </div>
+        </header>
     )
 }
 
