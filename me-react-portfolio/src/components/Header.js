@@ -1,14 +1,14 @@
 import React from "react";
 
-const navTitles = ["ABOUT ME", "PORTFOLIO", "CONTACT", "RESUME"];
+const navTitles = ["ABOUT", "PORTFOLIO", "CONTACT", "RESUME"];
 
-function Header() {
+function Header({ currentPage, handlePageChange}) {
     return (
         <header>
             <h1>Miguel Escobar</h1>
             <nav>
                 {navTitles.map((title) => (
-                    <p>{title}</p>
+                    <p className={title} onClick={() => handlePageChange(title)}>{title}</p>
                 ))}
             </nav>
         </header>
