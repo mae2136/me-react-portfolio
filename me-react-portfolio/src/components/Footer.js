@@ -5,7 +5,7 @@ import React from "react";
 function Footer() {
     return (
         <footer>
-            <p>@Miguel Escobar, 2022</p>
+            <h3>@Miguel Escobar, 2022</h3>
         </footer>
     )
 }

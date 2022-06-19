@@ -32,7 +32,7 @@ function PortfolioContainer() {
             {/* Header to contain Name and Nav Links */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
             <div>
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} className="App-logo justify-content-center" alt="logo" />
                 {renderPage()}
             </div>
             {/* Footer Component that contains footer stuff (TBD) */}
