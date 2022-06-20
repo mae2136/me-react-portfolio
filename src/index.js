@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App url='https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf' />
+    <App />
   </React.StrictMode>
 );
 

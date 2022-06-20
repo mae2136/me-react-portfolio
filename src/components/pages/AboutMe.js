@@ -5,9 +5,9 @@ function AboutMe() {
         <>
             <div className="container m-2">
                 <h2>About Me</h2>
-                {/* Rounded image found at https://codepen.io/oidre/pen/ExPaaEJ*/}
-                <div class="relative w-64 h-64">
-                    <img class="rounded-full border border-gray-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel Image" />
+                {/* Rounded image template found at https://codepen.io/oidre/pen/ExPaaEJ*/}
+                <div className="relative w-64 h-64">
+                    <img className="rounded-full border border-gray-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel Image" />
                 </div>
                 <div>
                     <p>Welcome to my React portfolio site!</p>

@@ -1,11 +1,16 @@
 import React from "react";
+import Project from '../Project';
 
-// const navTitles = ["ABOUT ME", "PORTFOLIO", "CONTACT", "RESUME"];
+const projects = [{name: "Something", description: "Some Text about it", image: "Link to screenshot"}, {name: "Something", description: "Some Text about it", image: "Link to screenshot"}, {name: "Something", description: "Some Text about it", image: "Link to screenshot"}, {name: "Something", description: "Some Text about it", image: "Link to screenshot"}];
 
 function Portfolio() {
     return (
         <>
-            <p>Portfolio pictures!</p>
+            <div>
+                {projects.map((project) => (
+                    <Project project={project} />
+                ))}
+            </div>
         </>
     )
 }

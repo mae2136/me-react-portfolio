@@ -5,7 +5,10 @@ import React from "react";
 function Resume() {
     return (
         <>
-            <p>Link to Resume</p>
+            <h2>Resume</h2>
+            <div className="h-full w-full">
+                <embed src={process.env.PUBLIC_URL + '/Escobar_Resume.pdf'} />
+            </div>
         </>
     )
 }
