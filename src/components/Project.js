@@ -1,24 +1,26 @@
 import React from "react";
 
-// Find a Good Card/Gallery
+// Find a Good Card/Gallery. See below link
 // https://morioh.com/p/0f8daffefadc
 
 function Project({ project }) {
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full" src={require('./profile.jpg')} alt="Display" />
+        // Figure out how to align 2 cards wide on desktop
+        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-2">
+            {/* <img className="w-full" src={project.image} alt="Display" /> */}
             <div className="px-6 py-4">
-                <div className="font-bold text-purple-500 text-xl mb-2">
-                    Blessing Krofegha
+                <div className="font-bold text-slate-200 text-xl mb-2">
+                    {project.name}
                 </div>
-                <p className="text-gray-700 text-base">
-                    When i’m not coding i switch to netflix with biscuits and cold tea as my companion. <span></span>😜
+                <p className="text-slate-300 text-base">
+                    {project.description}
                 </p>
             </div>
             <div className="px-6 py-4">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Software Engineer</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Writter</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mt-2 ml-20">#Public Speaker</span>
+                {/* Make an array of techs used in the project.tech, and loop through them to create a given bubble */}
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">mySQL</span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Sequelize</span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mt-2 ml-20">Handlebars</span>
             </div>
         </div>
     )
