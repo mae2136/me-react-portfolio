@@ -6,8 +6,8 @@ import React from "react";
 function Project({ project }) {
     return (
         // Figure out how to align 2 cards wide on desktop
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-2">
-            {/* <img className="w-full" src={project.image} alt="Display" /> */}
+        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-2 border border-gray-300">
+            <img className="w-full" src={project.image} alt="Display" />
             <div className="px-6 py-4">
                 <div className="font-bold text-slate-200 text-xl mb-2">
                     {project.name}
@@ -20,7 +20,7 @@ function Project({ project }) {
             <div className="px-6 py-4">
                 {/* Make an array of techs used in the project.tech, and loop through them to create a given bubble */}
                 {project.tech.map((tech, index) => {
-                    return <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{tech}</span>
+                    return <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2">{tech}</span>
                 })}
             </div>
         </div>
