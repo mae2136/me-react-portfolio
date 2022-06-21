@@ -4,12 +4,12 @@ function AboutMe() {
     return (
         <>
             <div className="container m-2 justify-center">
-                <h2 className="justify-center">About Me</h2>
+                <h2 className="justify-center flex flex-row underline">About Me</h2>
                 {/* Rounded image template found at https://codepen.io/oidre/pen/ExPaaEJ*/}
-                <div className="relative w-64 h-64">
-                    <img className="rounded-full border border-gray-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel" />
-                </div>
-                <div>
+                <div className="flex flex-col align-center">
+                    <div className="relative w-64 h-64">
+                        <img className="rounded-full border border-sky-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel" />
+                    </div>
                     <p>Welcome to my React portfolio site!</p>
                     <p>My name is Miguel Escobar, and I am an aspiring Web Developer. I am currently learning how to
                         become a web developer at Northwestern University in order to change my career. While changing careers is scary, I am having a blast learning how to make web applications!</p>
@@ -21,7 +21,7 @@ function AboutMe() {
                         sorts of medical devices.</p>
                     <p>When I'm not busy with work and changing careers, I am out playing board and video games with my
                         family and friends. And fun fact: I'm going to be a father later this year!</p>
-                    <p>Feel free to look through my portfolio, and reach out if you have any questions.</p>
+                    <p>Feel free to look through my portfolio page or my <span><a className="underline hover:text-sky-100" href="https://github.com/mae2136">github</a></span>, and reach out if you have any questions.</p>
                 </div>
             </div>
         </>

@@ -27,10 +27,10 @@ function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className='flex flex-auto flex-col'>
+        <div className='flex flex-auto flex-col bg-sky-300'>
             {/* Header to contain Name and Nav Links */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
-            <div className='flex-auto container mx-auto bg-zinc-500 rounded shadow-lg p-5 m-2'>
+            <div className='flex-auto container mx-auto border border-cyan-800 bg-cyan-700 rounded shadow-lg p-5 m-2'>
                 {renderPage()}
             </div>
             {/* Footer Component that contains footer stuff (TBD) */}
