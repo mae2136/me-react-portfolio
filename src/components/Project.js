@@ -6,7 +6,7 @@ import React from "react";
 function Project({ project }) {
     return (
         // Figure out how to align 2 cards wide on desktop
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-2 border border-gray-300">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-3 border border-gray-300 md:mx-3">
             <img className="w-full" src={project.image} alt="Display" />
             <div className="px-6 py-4">
                 <div className="font-bold text-slate-200 text-xl mb-2">

@@ -6,7 +6,7 @@ const projects = [{name: "Fully Booked", image: "https://user-images.githubuserc
 function Portfolio() {
     return (
         <>
-            <div>
+            <div className="md:flex md:flex-row">
                 {projects.map((project) => (
                     <Project project={project} />
                 ))}
