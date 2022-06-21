@@ -13,14 +13,15 @@ function Project({ project }) {
                     {project.name}
                 </div>
                 <p className="text-slate-300 text-base">
-                    {project.description}
+                    {/* {project.description} */}
+                    Lord of the Rings is Awesome
                 </p>
             </div>
             <div className="px-6 py-4">
                 {/* Make an array of techs used in the project.tech, and loop through them to create a given bubble */}
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">mySQL</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Sequelize</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mt-2 ml-20">Handlebars</span>
+                {project.tech.map((tech, index) => {
+                    return <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{tech}</span>
+                })}
             </div>
         </div>
     )
