@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from "./Header";
-import logo from '../logo.svg';
 import Footer from "./Footer";
 // import Content from "./Content";
 import AboutMe from "./pages/AboutMe";
@@ -10,7 +9,7 @@ import Resume from "./pages/Resume";
 
 
 function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+    const [currentPage, setCurrentPage] = useState('ABOUT');
 
     const renderPage = () => {
         if (currentPage === 'ABOUT') {
@@ -28,10 +27,10 @@ function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className='flex-auto flex-col'>
+        <div className='flex flex-auto flex-col'>
             {/* Header to contain Name and Nav Links */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
-            <div className='container mx-auto bg-zinc-500 rounded shadow-lg p-5 m-2'>
+            <div className='flex-auto container mx-auto bg-zinc-500 rounded shadow-lg p-5 m-2'>
                 {renderPage()}
             </div>
             {/* Footer Component that contains footer stuff (TBD) */}

@@ -3,11 +3,11 @@ import React from "react";
 function AboutMe() {
     return (
         <>
-            <div className="container m-2">
-                <h2>About Me</h2>
+            <div className="container m-2 justify-center">
+                <h2 className="justify-center">About Me</h2>
                 {/* Rounded image template found at https://codepen.io/oidre/pen/ExPaaEJ*/}
                 <div className="relative w-64 h-64">
-                    <img className="rounded-full border border-gray-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel Image" />
+                    <img className="rounded-full border border-gray-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel" />
                 </div>
                 <div>
                     <p>Welcome to my React portfolio site!</p>

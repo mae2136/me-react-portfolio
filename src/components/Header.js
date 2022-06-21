@@ -6,12 +6,12 @@ const navTitles = ["ABOUT", "PORTFOLIO", "CONTACT", "RESUME"];
 // Loop throughtitle arrays to build out navbar
 function Header({ currentPage, handlePageChange}) {
     return (
-        <header>
+        <header className="justify-center md:flex md:flex-row md:justify-between">
             <h1>Miguel Escobar</h1>
             <nav>
-                <ul>
+                <ul className="md:flex md:flex-row justify-around">
                     {navTitles.map((title, index) => (
-                        <li className={title} key={index} onClick={() => handlePageChange(title)}>{title}</li>
+                        <li className={`md:mx-3 ${title}`} key={index} onClick={() => handlePageChange(title)}>{title}</li>
                     ))}
                 </ul>
             </nav>
