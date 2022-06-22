@@ -69,16 +69,16 @@ function Contact() {
 
     return (
         <div className="justify-center">
-            <h2>Contact me</h2>
+            <h2 className="font-bold text-slate-200 justify-center text-3xl flex flex-row mb-3 border-b pb-2">Contact Me</h2>
             <div>
                 <form className="form my-2">
-                    <label>Name</label><br />
-                    <input className="my-2 p-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={name} onChange={handleInputChange} type="text" name="name" placeholder="Jason" /><br />
-                    <label>Email</label><br />
-                    <input className="p-2 my-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={email} onChange={handleInputChange} type="email" name="email" placeholder="Jason@email.com" /><br />
-                    <label>Message</label><br />
+                    <label className="text-slate-200">Name</label><br />
+                    <input className="my-2 p-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={name} onChange={handleInputChange} type="text" name="name" placeholder="Name" /><br />
+                    <label className="text-slate-200">Email</label><br />
+                    <input className="p-2 my-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={email} onChange={handleInputChange} type="email" name="email" placeholder="something@email.com" /><br />
+                    <label className="text-slate-200">Message</label><br />
                     {/* Example 7 from https://larainfo.com/blogs/tailwind-css-forms-examples */}
-                    <textarea className="w-full h-32 my-2 p-2 border-2 border-gray-300 rounded-sm outline-none focus:border-blue-400" value={message} onChange={handleInputChange} name="message" placeholder="Jason's message" /><br />
+                    <textarea className="w-full h-32 my-2 p-2 border-2 border-gray-300 rounded-sm outline-none focus:border-blue-400" value={message} onChange={handleInputChange} name="message" placeholder="Your message here" /><br />
                     <button type="button" className="text-slate-100 p-2 rounded bg-gray-800 hover:text-gray-400 mb-2" onClick={sendEmail}>
                         Submit
                     </button>

@@ -4,13 +4,13 @@ function AboutMe() {
     return (
         <>
             <div className="container m-2 justify-center">
-                <h2 className="justify-center flex flex-row mb-3 border-b pb-2">About Me</h2>
+                <h2 className="font-bold text-slate-200 justify-center text-3xl justify-center flex flex-row mb-3 border-b pb-2">About Me</h2>
                 {/* Rounded image template found at https://codepen.io/oidre/pen/ExPaaEJ*/}
                 <div className="flex flex-col items-center justify-around md:flex-row md: justify-end">
                     <div className="relative w-64 h-64 mb-3">
                         <img className="rounded-full border border-sky-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel" />
                     </div>
-                    <div className="px-3 mx-2">
+                    <div className="px-3 mx-2 text-slate-200">
                         <p>Welcome to my React portfolio site!</p><br/>
                         <p>My name is Miguel Escobar, and I am an aspiring Web Developer. I am currently learning how to
                             become a web developer at Northwestern University in order to change my career. While changing careers is scary, I am having a blast learning how to make web applications!</p><br/>
