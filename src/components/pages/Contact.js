@@ -76,17 +76,17 @@ function Contact() {
                     <input className="my-2 p-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={name} onChange={handleInputChange} type="text" name="name" placeholder="Name" /><br />
                     <label className="text-slate-200">Email</label><br />
                     <input className="p-2 my-2 w-full border-gray-300 focus:border-blue-400 rounded-sm" value={email} onChange={handleInputChange} type="email" name="email" placeholder="something@email.com" /><br />
+                    {errorMessage && (
+                        <div>
+                            <p className="p-2 error-text rounded bg-red-200">{errorMessage}</p>
+                        </div>
+                    )}
                     <label className="text-slate-200">Message</label><br />
                     {/* Example 7 from https://larainfo.com/blogs/tailwind-css-forms-examples */}
                     <textarea className="w-full h-32 my-2 p-2 border-2 border-gray-300 rounded-sm outline-none focus:border-blue-400" value={message} onChange={handleInputChange} name="message" placeholder="Your message here" /><br />
                     <button type="button" className="text-slate-100 p-2 rounded bg-gray-800 hover:text-gray-400 mb-2" onClick={sendEmail}>
                         Submit
                     </button>
-                    {errorMessage && (
-                        <div>
-                            <p className="p-2 error-text rounded bg-red-200">{errorMessage}</p>
-                        </div>
-                    )}
                     {/* https://v1.tailwindcss.com/components/alerts */}
                     <div className={`bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative ${success === true ? 'flex' : 'hidden'}`} role="alert">
                         <strong className="font-bold">Success!&nbsp;</strong>

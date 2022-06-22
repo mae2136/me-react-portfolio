@@ -25,7 +25,7 @@ Open up the site at the following link:
   
 The site will look like the following:
 
-![Screenshot](./readme_assets/screenshot_1.PNG)
+![Screenshot](./assets/screenshot.PNG)
       
 ## Contributing
   
