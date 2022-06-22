@@ -7,10 +7,10 @@ function AboutMe() {
                 <h2 className="font-bold text-slate-200 justify-center text-3xl justify-center flex flex-row mb-3 border-b pb-2">About Me</h2>
                 {/* Rounded image template found at https://codepen.io/oidre/pen/ExPaaEJ*/}
                 <div className="flex flex-col items-center justify-around md:flex-row md: justify-end">
-                    <div className="relative w-64 h-64 mb-3">
+                    <div className="relative w-64 h-64 md:min-w-[20%] mb-3">
                         <img className="rounded-full border border-sky-100 shadow-sm" src="https://ca.slack-edge.com/T02TFJSUNCT-U02USAPQK8B-c50cbbe95768-512" alt="Miguel" />
                     </div>
-                    <div className="px-3 mx-2 text-slate-200">
+                    <div className="px-3 mx-2 text-slate-200 text-lg">
                         <p>Welcome to my ReactJS portfolio site!</p><br />
                         <p>My name is Miguel Escobar, and I am an aspiring Web Developer. I am currently learning how to
                             become a web developer at Northwestern University.</p><br />
