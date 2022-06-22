@@ -30,9 +30,9 @@ function PortfolioContainer() {
         <div className='flex flex-auto flex-col bg-sky-300'>
             {/* Header to contain Name and Nav Links */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
-            <div className='flex-auto container mx-auto border border-cyan-800 bg-cyan-700 rounded shadow-lg p-5 m-2'>
+            <main className='flex-auto container mx-auto border border-cyan-800 bg-cyan-700 rounded shadow-lg p-5 m-2'>
                 {renderPage()}
-            </div>
+            </main>
             {/* Footer Component that contains footer stuff (TBD) */}
             <Footer />
         </div>

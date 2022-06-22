@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="flex flex-row justify-center p-3 bg-cyan-600">
             <h3>@Miguel Escobar, 2022</h3>
         </footer>
     )

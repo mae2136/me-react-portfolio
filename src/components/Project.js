@@ -5,17 +5,16 @@ import React from "react";
 
 function Project({ project }) {
     return (
-        // Figure out how to align 2 cards wide on desktop
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mb-3 border border-gray-300 md:mx-3">
-            <img className="w-full" src={project.image} alt="Display" />
+        // Figure out how to align 2 cards wide on desktop md:min-w-[18rem] 
+        <div className="max-w-sm md:min-w-[20rem] rounded overflow-hidden shadow-lg mb-3 border border-gray-300 md:mx-3">
+            <img className="w-fit" src={project.image} alt="Display" />
             <div className="px-6 py-4">
                 <div className="font-bold text-slate-200 text-xl mb-2">
                     {project.name}
                 </div>
-                <p className="text-slate-300 text-base">
-                    {/* {project.description} */}
-                    Lord of the Rings is Awesome
-                </p>
+                <a href={project.link} className="text-slate-300 text-base hover:text-slate-600 cursor-pointer">
+                    {project.link}
+                </a>
             </div>
             <div className="px-6 py-4">
                 {/* Make an array of techs used in the project.tech, and loop through them to create a given bubble */}
