@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/me-react-portfolio/static/css/main.bdb28bad.css",
-    "main.js": "/me-react-portfolio/static/js/main.a0efee50.js",
+    "main.css": "/me-react-portfolio/static/css/main.1db17a89.css",
+    "main.js": "/me-react-portfolio/static/js/main.5e3dbab5.js",
     "static/js/787.6f2ef78e.chunk.js": "/me-react-portfolio/static/js/787.6f2ef78e.chunk.js",
+    "static/media/Twitter-Logo.png": "/me-react-portfolio/static/media/Twitter-Logo.27cda7bdfce3369a30e8.png",
     "index.html": "/me-react-portfolio/index.html",
-    "main.bdb28bad.css.map": "/me-react-portfolio/static/css/main.bdb28bad.css.map",
-    "main.a0efee50.js.map": "/me-react-portfolio/static/js/main.a0efee50.js.map",
+    "main.1db17a89.css.map": "/me-react-portfolio/static/css/main.1db17a89.css.map",
+    "main.5e3dbab5.js.map": "/me-react-portfolio/static/js/main.5e3dbab5.js.map",
     "787.6f2ef78e.chunk.js.map": "/me-react-portfolio/static/js/787.6f2ef78e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdb28bad.css",
-    "static/js/main.a0efee50.js"
+    "static/css/main.1db17a89.css",
+    "static/js/main.5e3dbab5.js"
   ]
 }
