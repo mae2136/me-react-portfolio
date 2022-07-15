@@ -6,7 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
-
+import "./CSS/styles.css"
 
 function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('ABOUT');
@@ -27,7 +27,7 @@ function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className='flex flex-auto flex-col bg-sky-300'>
+        <div className='flex flex-auto flex-col bg-sky-300 bg-heropattern'>
             {/* Header to contain Name and Nav Links */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
             <main className='flex-auto container mx-auto border border-cyan-800 bg-cyan-700 rounded shadow-lg p-5 m-2'>
